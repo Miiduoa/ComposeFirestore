@@ -104,3 +104,4 @@ fun PreviewBirth() {
         Birth(modifier = Modifier.padding())
     }
 }
+
