@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.composefirestore.ui.theme.ComposeFirestoreTheme
+import com.example.composefirestore.ui.theme.ComposeFireStoreTheme
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -31,14 +31,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ComposeFirestoreTheme {
+            ComposeFireStoreTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     /*
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
-                     */
+                    */
                     Birth(m = Modifier.padding(innerPadding))
                 }
             }
@@ -48,9 +48,19 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Birth(m: Modifier){
+    var userName by remember { mutableStateOf("顧晉瑋")}
 
-}
+    Column {
+        TextField(
+            value = userName,
+            onValueChange = { newText ->
+                userName = newText
+            },
+            modifier = m,
+            label = { Text("姓名") },
+            placeholder = { Text("請輸入您的姓名") }
 
+        )
 
-
-}
+        Text("您輸入的姓名是：$userName")
+    }
