@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "99338025530",
+    "project_id": "firestore2024-7dac6",
+    "storage_bucket": "firestore2024-7dac6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99338025530:android:4e65c0043bc10d60ec9303",
+        "android_client_info": {
+          "package_name": "com.example.composefirestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_8wtPe1WcYkPGQZeGo_tPN3j0Qc_0Cmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
